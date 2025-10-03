@@ -1,37 +1,42 @@
 # REPORT.md  
-## Programming Assignment 02 – ls v1.0.0  
 
-### Student Info
-- **Name:** Hasima Asif  
-- **Roll No:** BSDSF23M050  
-- **Course:** Operating Systems  
+## Assignment: Programming Assignment 02 – ls v1.0.0  
 
----
+### 1. Repository Setup  
+- **Task:** Create GitHub repository `ROLL_NO-OS-A02` (mine: `BSDSF23M050-OS-A02`).  
+- **Action:** Initialized repo with `README.md`, cloned locally.  
+- **Result:** Repo successfully created and cloned.  
 
-## Q1: Explain the purpose of the `ls` program in Linux.
-*(Write your answer here — e.g., list files/directories, similar to the built-in `ls` command, etc.)*  
+### 2. Starter Code Integration  
+- **Task:** Copy starter code (`ls-v1.0.0.c` and `Makefile`) into repo.  
+- **Action:** Placed code inside `src/ls.c`, added Makefile.  
+- **Result:** Starter project integrated into local repo.  
 
----
+### 3. Project Structure  
+BSDSF23M050-OS-A02/
+├── src/ # contains ls.c
+├── bin/ # compiled binary
+├── obj/ # object files
+├── man/ # reserved for man page
+├── Makefile
+├── README.md
+└── REPORT.md
 
-## Q2: What is the role of the `Makefile` in this project?
-*(Write your answer here — e.g., automates compilation, separates source/object/bin, makes rebuild easier, etc.)*  
 
----
+- **Action:** Used `mkdir` and `.gitkeep` for empty folders.  
 
-## Q3: Explain the project structure (src, bin, obj, man).
-- **src/** → contains source code (e.g., `ls.c`)  
-- **bin/** → stores compiled executables  
-- **obj/** → stores object files during build  
-- **man/** → for man pages (bonus task)  
-- **Makefile** → build script  
-- **README.md** → repo description  
-- **REPORT.md** → your answers/report  
+### 4. Build & Test  
+- **Commands Used:**  
+  ```bash
+  make
+  ./bin/ls
+  ./bin/ls /etc
+  ./bin/ls /bin
+**Result:** 
+make builds successfully.
 
----
+### 5. Git Workflow  
+- Added, committed, and pushed all changes to main branch.  
 
-## Q4: How did you build and run the program?
-Commands used:  
-```bash
-make
-./bin/ls
-./bin/ls /etc /bin
+## ✅ Conclusion  
+Project built and tested successfully. Repository is complete and follows required structure.  
